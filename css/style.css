@@ -34,14 +34,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /*background-image: url('../assets/img/pattern.png');*/
-    background-color: #ececec;
+
+
 }
 
 header {
     position: absolute;
-
-
 }
 
 footer {
@@ -53,10 +51,11 @@ footer {
     width: 1600px;
     min-height: calc(100vh - 400px);
     margin: 0 auto;
+    background-image: url('../assets/img/pattern.png');
 }
 
 .block-wrapper {
-    padding: 0 175px;
+    padding: 0 280px;
 }
 
 .logo {
@@ -67,6 +66,13 @@ footer {
 .button {
     display: inline-block;
     text-decoration: none;
+}
+
+.styled-header {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    line-height: 24px;
+    color: #cc9900;
 }
 
 /*Header*/
@@ -92,7 +98,7 @@ footer {
 .header__navigation-element {
     display: inline-block;
     box-sizing: border-box;
-    margin-right: 50px;
+    margin-right: 45px;
     border-top: 3px solid transparent;
     padding: 37px 0 40px 0;
 }
@@ -116,16 +122,16 @@ footer {
 .header__social-icons {
     position: absolute;
     display: inline-block;
-    right: -125px;
-    top: 43px;
+    right: -100px;
+    top: 45px;
 }
 
 .header__social-icon {
     display: inline-block;
-    width: 30px;
+    width: 25px;
     height: 20px;
-    background-image: url("../assets/img/social.png");
-    background-repeat: no-repeat;
+    background: url("../assets/img/social.png") no-repeat;
+
 }
 
 .header__social-icon--twitter {
@@ -150,11 +156,28 @@ footer {
 }
 
 .promo__header {
+    position: relative;
     width: 970px;
     margin: 0 auto;
+    padding-bottom: 105px;
     font-family: 'Yeseva One', cursive;
     font-size: 90px;
     color: #f0efef;
+    text-align: center;
+}
+
+.promo__header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 235px;
+    height: 45px;
+    left: 370px;
+    bottom: 30px;
+    background: url("../assets/img/decoration-figure.png");
+}
+
+.promo__buttons {
     text-align: center;
 }
 
@@ -180,3 +203,5 @@ footer {
 .promo__button--menu {
     border-color: #d3d0bb;
 }
+
+/*Chief*/
