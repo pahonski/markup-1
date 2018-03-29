@@ -1,0 +1,182 @@
+/*Main*/
+
+@font-face {
+    font-family: Gentium Book Basic;
+    src: url(../assets/fonts/GenBkBasR.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Gentium Book Basic;
+    src: url(../assets/fonts/GenBkBasB.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Yeseva One;
+    src: url(../assets/fonts/YesevaOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background-image: url('../assets/img/pattern.png');*/
+    background-color: #ececec;
+}
+
+header {
+    position: absolute;
+
+
+}
+
+footer {
+    min-height: calc(100vh - 400px);
+}
+
+.wrapper {
+    position: relative;
+    width: 1600px;
+    min-height: calc(100vh - 400px);
+    margin: 0 auto;
+}
+
+.block-wrapper {
+    padding: 0 175px;
+}
+
+.logo {
+    width: 165px;
+    height: 30px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*Header*/
+
+.header__logo {
+    position: absolute;
+    left: 175px;
+    top: 35px;
+}
+
+.header__navigation {
+    display: inline-block;
+    padding: 0;
+    margin-left: 575px;
+    list-style: none;
+}
+
+.header__navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.header__navigation-element {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 50px;
+    border-top: 3px solid transparent;
+    padding: 37px 0 40px 0;
+}
+
+.header__navigation-element--active {
+    border-color: #cbc8bf;
+}
+
+.header__navigation-element:last-child {
+    margin-right: 0;
+}
+
+.header__navigation-link {
+    text-decoration: none;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.header__social-icons {
+    position: absolute;
+    display: inline-block;
+    right: -125px;
+    top: 43px;
+}
+
+.header__social-icon {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-image: url("../assets/img/social.png");
+    background-repeat: no-repeat;
+}
+
+.header__social-icon--twitter {
+    background-position: 5px 0;
+}
+
+.header__social-icon--youtube {
+    background-position: -30px 0;
+}
+
+.header__social-icon--facebook {
+    background-position: -60px 0;
+}
+
+/*Promo*/
+.promo {
+    height: 750px;
+    padding-top: 235px;
+    background: url('../assets/img/promo.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.promo__header {
+    width: 970px;
+    margin: 0 auto;
+    font-family: 'Yeseva One', cursive;
+    font-size: 90px;
+    color: #f0efef;
+    text-align: center;
+}
+
+.promo__button {
+    width: 226px;
+    height: 55px;
+    padding-top: 15px;
+    border: 1px solid;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.promo__button--book {
+    margin-right: 30px;
+    border-color: #0d0f13;
+    background-color: rgba(20, 16, 10, 0.8);
+}
+
+.promo__button--menu {
+    border-color: #d3d0bb;
+}
