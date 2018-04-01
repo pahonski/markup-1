@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Lambda</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/libs/font-awesome/css/fontawesome-all.min.css">
 </head>
 <body>
 <div class="wrapper">
@@ -22,19 +23,19 @@
             </ul>
         </nav>
         <div class="header__social-icons">
-            <a class="header__social-icon header__social-icon--twitter" href="#"></a>
-            <a class="header__social-icon header__social-icon--youtube" href="#"></a>
-            <a class="header__social-icon header__social-icon--facebook" href="#"></a>
+            <a target="_blank" class="header__social-icon header__social-icon--twitter" href="https://twitter.com"></a>
+            <a target="_blank" class="header__social-icon header__social-icon--youtube" href="https://youtube.com"></a>
+            <a target="_blank" class="header__social-icon header__social-icon--facebook" href="https://facebook.com"></a>
         </div>
     </header>
 
     <main>
         <section class="promo">
             <div class="block-wrapper">
-                <div class="promo__header">the right ingridients for the right food</div>
+                <h1 class="promo__header">the right ingridients for the right food</h1>
                 <div class="promo__buttons">
-                    <a class="button promo__button promo__button--book" href="#">book a table</a>
-                    <a class="button promo__button promo__button--menu" href="#">see the menu</a>
+                    <a class="button promo__button promo__button--book" href="#book">book a table</a>
+                    <a class="button promo__button promo__button--menu" href="#menu">see the menu</a>
                 </div>
             </div>
         </section>
@@ -77,7 +78,7 @@
         </section>
 
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <div class="block-wrapper clearfix">
                 <div class="menu--left-side">
                     <article class="menu-item">
@@ -212,7 +213,6 @@
                             <p class="info__description paragraph--lato">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                         </div>
                     </article>
-                    <!--  <input type="text" placeholder="Birth Date" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">  -->
                 </div>
             </div>
         </section>
@@ -228,6 +228,7 @@
                         <blockquote>
                             <p class="reviews__description">
                                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+
                             </p>
                             <cite class="reviews__username">
                                 - food inc, New York
@@ -240,63 +241,109 @@
         </section>
 
 
-        <section class="feedback">
+        <section class="booking" id="book">
             <div class="block-wrapper clearfix">
-                <div class="feedback--left-side">
-                    <img src="./assets/img/feedback-img-1.jpg" class="feedback__image">
-                    <img src="./assets/img/feedback-img-2.jpg" class="feedback__image">
+                <div class="booking--left-side">
+                    <img src="./assets/img/booking-img-1.jpg" class="booking__image">
+                    <img src="./assets/img/booking-img-2.jpg" class="booking__image">
                 </div>
-                <div class="feedback--right-side">
-                    <section class="feedback-form">
-                        <h2 class="feedback-form__header styled-header styled-header--gold">
+                <div class="booking--right-side">
+                    <section class="booking-form">
+                        <h2 class="booking-form__header styled-header styled-header--gold">
                             Just the right food
                         </h2>
-                        <div class="feedback-form__description-block">
-                            <p class="feedback-form__description paragraph-lato">
+                        <div class="booking-form__description-block">
+                            <p class="booking-form__description paragraph-lato">
                                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
+
                             </p>
 
-                            <p class="feedback-form__description paragraph-lato">
+                            <p class="booking-form__description paragraph-lato">
                                 Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.
                             </p>
                         </div>
 
-                        <div class="feedback-form__input-block clearfix">
-                            <div class="feedback-form__inputs feedback--left-side">
-                                <div class="feedback-form__input-element">
-                                    <label class="feedback-form__input-name" for="name">Name</label>
-                                    <input class="feedback-form__input" type="text" id="name" placeholder="your name *">
+                        <form class="booking-form__input-block clearfix">
+                            <div class="booking-form__inputs booking--left-side">
+                                <div class="booking-form__input-element">
+                                    <label class="booking-form__input-name" for="name">Name</label>
+                                    <input class="booking-form__input" type="text" id="name" placeholder="your name *" required>
                                 </div>
-                                <div class="feedback-form__input-element">
-                                    <label class="feedback-form__input-name" for="date">Date</label>
-                                    <input class="feedback-form__input" id="date" type="text" placeholder="date *" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                                <div class="booking-form__input-element">
+                                    <label class="booking-form__input-name" for="date">Date</label>
+                                    <input class="booking-form__input" id="date" type="text" placeholder="date *" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required>
+                                    <i class="fas fa-calendar-alt"></i>
                                 </div>
                             </div>
-                            <div class="feedback-form__inputs feedback--right-side">
-                                <div class="feedback-form__input-element">
-                                    <label class="feedback-form__input-name" for="mail">Email</label>
-                                    <input class="feedback-form__input" type="email" id="mail" placeholder="your email *">
+                            <div class="booking-form__inputs booking--right-side">
+                                <div class="booking-form__input-element">
+                                    <label class="booking-form__input-name" for="mail">Email</label>
+                                    <input class="booking-form__input" type="email" id="mail" placeholder="your email *" required>
                                 </div>
-                                <div class="feedback-form__input-element">
-                                    <label class="feedback-form__input-name" for="number">Party Number</label>
-                                    <select  class="feedback-form__input" name="partyNumber" id="number">
-                                        <option value="none">party number</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
+                                <div class="booking-form__input-element">
+                                    <label class="booking-form__input-name" for="number">Party Number</label>
+                                    <select  class="booking-form__input" name="partyNumber" id="number">
+                                        <option class="number-false" value="none">party number</option>
+                                        <option class="number-true" value="1">1</option>
+                                        <option class="number-true" value="2">2</option>
+                                        <option class="number-true" value="3">3</option>
                                     </select>
+                                    <i class="fas fa-angle-down"></i>
                                 </div>
                             </div>
-                        </div>
-                        <a href="#" class="feedback__button button">Book now!</a>
+                            <button type="submit" class="booking__button button">Book now!</button>
+                        </form>
+
                     </section>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="block-wrapper clearfix">
+            <section class="footer-element">
+                <h3 class="footer-element__header styled-header styled-header--silver-200">About Us</h3>
+                <p class="footer-element__description">
+                    Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.
+                    Lamda the best restaurant in town
+                </p>
+            </section>
+            <section class="footer-element">
+                <h3 class="footer-element__header styled-header styled-header--silver-200">Opening Hours</h3>
+                <div class="footer-element__opening-hours">
+                    <div class="footer-element__opening-hour">
+                        <span class="footer-element__day-options">Mon-Thu: </span><span class="footer-element__hour-options">7:00am-8:00pm</span>
+                    </div>
+                    <div class="footer-element__opening-hour">
+                        <span class="footer-element__day-options">Fri-Sun: </span><span class="footer-element__hour-options">7:00am-10:00pm</span>
+                    </div>
+                </div>
+                <div class="footer-element__cards">
+                        <i class="footer-element__card fab fa-cc-amex"></i>
+                        <i class="footer-element__card fab fa-cc-paypal"></i>
+                        <i class="footer-element__card fab fa-cc-visa"></i>
+                        <i class="footer-element__card fab fa-cc-discover"></i>
+                </div>
+            </section>
+            <section class="footer-element">
+                <h3 class="footer-element__header styled-header styled-header--silver-200">Our Location</h3>
+                <div class="footer-element__address-container">
+                    <div class="footer-element__address-item">
+                        19th Paradise Street Sitia
+                    </div>
+                    <div class="footer-element__address-item">
+                        128 Meserole Avenue
+                    </div>
+                </div>
+                <div class="footer-element__social">
+                    <a target="_blank" class="footer-element__social-item" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="footer-element__social-item" href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" class="footer-element__social-item" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" class="footer-element__social-item" href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+        </div>
     </footer>
 </div>
 
